@@ -8,8 +8,8 @@ WORKDIR /app
 ENV PATH /app/node_modules/.bin:$PATH
 
 # microfrontend envs
-ENV REACT_APP_PRODUCTS_MICROFRONTEND_URL http://microfe.sagebrush.dev/products/dist/mf-products.js
-ENV REACT_APP_CART_MICROFRONTEND_URL http://microfe.sagebrush.dev/cart/dist/mf-cart.js
+ENV REACT_APP_PRODUCTS_MICROFRONTEND_URL https://microfe.sagebrush.dev/products/dist/mf-products.js
+ENV REACT_APP_CART_MICROFRONTEND_URL https://microfe.sagebrush.dev/cart/dist/mf-cart.js
 
 # install app dependencies
 COPY package.json ./

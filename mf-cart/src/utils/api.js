@@ -3,7 +3,7 @@ import axios from 'axios';
 const call = method => (url, { body, query, headers } = {}) => {
   return axios({
     method,
-    baseURL: `http://microfe.sagebrush.dev/backend${url}`,
+    baseURL: `https://microfe.sagebrush.dev/backend${url}`,
     data: body,
     headers,
     params: query
