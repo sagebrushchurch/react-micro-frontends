@@ -3,8 +3,6 @@ services:
   frenchie-store-host:
     build:
       context: ./host-app
-    ports:
-      - "3000:3000"
     container_name: frenchie-store-host
     stdin_open: true
     networks:
@@ -12,8 +10,6 @@ services:
   mf-products:
       build:
         context: ./mf-products
-      ports:
-        - "3001:80"
       container_name: mf-products
       stdin_open: true
       networks:
@@ -21,8 +17,6 @@ services:
   mf-cart:
     build:
       context: ./mf-cart
-    ports:
-      - "3002:80"
     container_name: mf-cart
     stdin_open: true
     networks:
@@ -30,8 +24,6 @@ services:
   backend:
     build:
       context: './backend'
-    ports:
-      - "3003:3003"
     container_name: frenchie-store-backend
     networks:
       - uFE
