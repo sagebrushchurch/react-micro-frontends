@@ -31,6 +31,6 @@ services:
     build:
       dockerfile: dockerfile
       context: ./router
-  ports:
+     ports:
       - "3004:80"
   
