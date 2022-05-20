@@ -35,7 +35,15 @@ services:
       - "3004:80"
     networks:
       - uFE
-  
+  account:
+      build:
+        context: ./account
+      container_name: account
+      stdin_open: true
+      networks:
+      - uFE
+      ports:
+      - 3000:3000
 networks:
     uFE:
         external: true
