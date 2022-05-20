@@ -1,4 +1,4 @@
-version: '2.0'
+version: '3.8'
 services:
   frenchie-store-host:
     build:
@@ -16,7 +16,7 @@ services:
         - "3001:80"
       container_name: mf-products
       stdin_open: true
-    networks:
+      networks:
       - uFE
   mf-cart:
     build:
