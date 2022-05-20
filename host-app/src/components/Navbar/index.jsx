@@ -30,7 +30,7 @@ const Navbar = ({ isCartLoading, cart }) => {
             <PetsIcon />
           </IconButton>
           <Typography variant="h6" className={classes.title}>
-            Frenchie Store
+            IT Store
           </Typography>
           <div className={classes.grow} />
           {showCartBadge && <CartBadge cart={cart} />}
