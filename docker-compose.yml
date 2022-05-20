@@ -27,3 +27,10 @@ services:
     ports:
       - "3003:3003"
     container_name: frenchie-store-backend
+  router:
+    build:
+      dockerfile: dockerfile
+      context: ./router
+  ports:
+      - "3004:80"
+  
